@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>✦ Yandex Cloud CDN — актуальные IP</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://yastatic.net" crossorigin />
+    <link href="https://yastatic.net/fonts/Inter/Inter.css" rel="stylesheet" />
+    <link href="https://yastatic.net/fonts/CormorantGaramond/CormorantGaramond.css" rel="stylesheet" />
     <style>
         :root {
             --bg-body: #0a0a0a;
@@ -26,15 +26,11 @@
             --ip-card-border: rgba(212, 175, 55, 0.15);
             --particle-hue: 38;
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin:0; padding:0; box-sizing:border-box; }
         body {
             background: var(--bg-body);
             color: var(--text-secondary);
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
             font-weight: 300;
             line-height: 1.6;
             overflow-x: hidden;
@@ -70,7 +66,7 @@
             margin-bottom: 2.5rem;
         }
         .logo h1 {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Cormorant Garamond', 'Georgia', serif;
             font-weight: 700;
             font-size: 2.6rem;
             background: linear-gradient(135deg, #f7e05e 0%, var(--accent) 40%, #b8860b 80%);
@@ -112,8 +108,8 @@
             flex-wrap: wrap;
         }
         .theme-btn {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
             color: var(--text-muted);
             padding: 0.3rem 0.8rem;
             border-radius: 30px;
@@ -126,7 +122,7 @@
             font-family: 'Inter', sans-serif;
         }
         .theme-btn:hover {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255,255,255,0.08);
             border-color: var(--accent);
             color: var(--text-primary);
         }
@@ -142,7 +138,7 @@
             border-radius: 28px;
             padding: 2.2rem 2.5rem;
             margin-bottom: 2.5rem;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.03);
             transition: background 0.4s, border-color 0.4s;
         }
         .ip-section h2 {
@@ -152,9 +148,7 @@
             color: var(--text-primary);
             margin-bottom: 0.3rem;
         }
-        .ip-section h2 .gold {
-            color: var(--accent);
-        }
+        .ip-section h2 .gold { color: var(--accent); }
         .ip-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -195,9 +189,7 @@
             color: var(--text-primary);
             margin: 2.8rem 0 0.8rem;
         }
-        .section-title .gold {
-            color: var(--accent);
-        }
+        .section-title .gold { color: var(--accent); }
         .card {
             background: var(--bg-card);
             backdrop-filter: blur(8px);
@@ -207,13 +199,8 @@
             margin-bottom: 1.8rem;
             transition: background 0.4s, border-color 0.4s;
         }
-        .card:hover {
-            border-color: var(--accent);
-        }
-        .card p,
-        .card li {
-            color: var(--text-secondary);
-        }
+        .card:hover { border-color: var(--accent); }
+        .card p, .card li { color: var(--text-secondary); }
         .code-block {
             background: var(--code-bg);
             border-radius: 12px;
@@ -228,50 +215,8 @@
             border: 1px solid var(--border-color);
             transition: background 0.3s, border-color 0.3s, color 0.3s;
         }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.8rem;
-        }
-        .os-tabs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-            margin-bottom: 1.2rem;
-        }
-        .os-tab {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 0.5rem 1.2rem;
-            border-radius: 40px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            color: var(--text-muted);
-            cursor: pointer;
-            transition: all 0.2s;
-            user-select: none;
-        }
-        .os-tab:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: var(--accent);
-            color: var(--text-primary);
-        }
-        .os-tab.active {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: #0a0a0a;
-        }
-        .os-content {
-            display: none;
-        }
-        .os-content.active {
-            display: block;
-        }
-        .news-feed {
-            margin-top: 0.5rem;
-        }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.8rem; }
+        .news-feed { margin-top: 0.5rem; }
         .news-item {
             display: flex;
             align-items: flex-start;
@@ -281,9 +226,7 @@
             font-size: 0.92rem;
             transition: border-color 0.3s;
         }
-        .news-item:last-child {
-            border-bottom: none;
-        }
+        .news-item:last-child { border-bottom: none; }
         .news-item .gold-dot {
             display: inline-block;
             width: 8px;
@@ -297,8 +240,8 @@
             transition: background 0.3s, box-shadow 0.3s;
         }
         @keyframes pulse-gold {
-            0%, 100% { opacity: 0.6; transform: scale(0.9); }
-            50% { opacity: 1; transform: scale(1.2); }
+            0%,100% { opacity:0.6; transform:scale(0.9); }
+            50% { opacity:1; transform:scale(1.2); }
         }
         .theme-badge {
             display: inline-block;
@@ -309,7 +252,7 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
             border: 1px solid var(--border-color);
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(255,255,255,0.04);
             color: var(--text-secondary);
             margin-right: 0.4rem;
             margin-bottom: 0.4rem;
@@ -324,9 +267,7 @@
             color: var(--text-muted);
             transition: border-color 0.3s;
         }
-        .footer p {
-            margin: 0.4rem 0;
-        }
+        .footer p { margin: 0.4rem 0; }
         .footer .disclaimer {
             font-size: 0.7rem;
             color: var(--text-muted);
@@ -342,17 +283,13 @@
             .logo h1 { font-size: 2rem; }
             .card { padding: 1.2rem 1.2rem; }
             .section-title { font-size: 1.5rem; }
-            .os-tabs { gap: 0.3rem; }
-            .os-tab { font-size: 0.65rem; padding: 0.3rem 0.8rem; }
             .theme-selector { gap: 0.2rem; }
             .theme-btn { font-size: 0.55rem; padding: 0.2rem 0.6rem; }
         }
-        @media (max-width: 480px) {
-            .ip-grid { grid-template-columns: 1fr 1fr; }
-        }
-        ::-webkit-scrollbar { width: 6px; }
+        @media (max-width: 480px) { .ip-grid { grid-template-columns: 1fr 1fr; } }
+        ::-webkit-scrollbar { width:6px; }
         ::-webkit-scrollbar-track { background: var(--bg-body); }
-        ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: var(--accent); border-radius:10px; }
     </style>
 </head>
 <body>
@@ -365,7 +302,7 @@
             </div>
             <div class="header-controls">
                 <span class="badge">🔮 v1.0</span>
-                <span class="badge">✨ 99 узлов online</span>
+                <span class="badge">✨ актуальные IP</span>
                 <span class="badge">⚡ last scan: 2026-07-05</span>
                 <div class="theme-selector" id="themeSelector">
                     <button class="theme-btn active" data-theme="gold">Gold</button>
@@ -381,7 +318,8 @@
             <h2><span class="gold">◆</span> Текущие рабочие IP</h2>
             <div class="ip-grid" id="ipGrid"></div>
             <p style="margin-top:1.2rem; font-size:0.8rem; color:var(--text-muted);">
-                Все IP взяты из официальных префиксов Yandex Cloud — <a href="https://tech.cdn.yandex.net/prefixes/yc.json" target="_blank" style="color:var(--accent);">yc.json</a>
+                Список обновлён <strong style="color:var(--text-primary);">05.07.2026</strong>
+                &nbsp;·&nbsp; <a href="https://github.com/catgroupmeow/ip-yandexcloudcdn" target="_blank" style="color:var(--accent);">Репозиторий на GitHub</a>
             </p>
         </section>
 
@@ -390,7 +328,7 @@
                 <h3 class="section-title" style="margin-top:0;"><span class="gold">◈</span> Использование</h3>
                 <div class="card">
                     <p style="margin-bottom:0.6rem;"><strong style="color:var(--text-primary);">curl</strong></p>
-                    <div class="code-block">curl --resolve cdn-yandexcloud.yourdomain.com:443:188.72.111.50 https://cdn-yandexcloud.yourdomain.com</div>
+                    <div class="code-block">curl --resolve cdn-yandexcloud.yourdomain.com:443:188.72.111.19 https://cdn-yandexcloud.yourdomain.com</div>
                     <p style="margin-top:0.8rem; font-size:0.9rem;">
                         <span style="color:var(--accent);">▸</span> Для брандмауэра: добавьте IP в <strong style="color:var(--text-primary);">белый список</strong>.
                     </p>
@@ -400,171 +338,24 @@
                 </div>
             </div>
             <div>
-                <h3 class="section-title" style="margin-top:0;"><span class="gold">◈</span> Подсети Yandex Cloud CDN</h3>
+                <h3 class="section-title" style="margin-top:0;"><span class="gold">◈</span> О проекте</h3>
                 <div class="card">
-                    <div class="code-block" style="font-size:0.7rem; line-height:1.8;">
-                        5.187.84.32/28
-                        31.135.225.72/29
-                        37.128.241.248/29
-                        45.143.89.64/28
-                        45.157.212.160/28
-                        46.245.128.32/28
-                        77.41.157.164/31
-                        83.172.52.72/29
-                        83.234.162.72/29
-                        83.234.162.88/29
-                        83.234.162.104/29
-                        85.26.163.216/31
-                        85.26.238.214/31
-                        85.249.252.76/31
-                        87.248.243.128/28
-                        87.248.243.144/28
-                        89.38.165.176/28
-                        89.113.99.112/31
-                        92.119.185.48/28
-                        93.157.160.64/28
-                        94.41.41.16/28
-                        94.41.133.48/28
-                        94.247.111.208/28
-                        95.167.77.24/29
-                        95.167.131.248/29
-                        95.167.135.8/29
-                        95.167.135.24/29
-                        109.200.119.104/29
-                        146.158.117.104/29
-                        146.185.212.64/28
-                        146.185.212.128/28
-                        176.59.94.112/28
-                        176.59.126.240/28
-                        176.59.158.128/28
-                        176.59.223.240/28
-                        178.19.241.152/29
-                        178.34.88.200/29
-                        178.176.143.66/31
-                        178.176.151.222/31
-                        178.176.191.78/31
-                        178.185.206.168/29
-                        178.185.206.184/29
-                        185.154.74.192/28
-                        185.205.130.40/29
-                        185.205.130.56/29
-                        185.205.130.72/29
-                        185.205.130.232/29
-                        185.205.130.248/29
-                        185.211.231.0/28
-                        185.221.46.128/28
-                        188.43.54.136/29
-                        188.43.55.184/29
-                        188.43.58.40/29
-                        188.72.103.0/24
-                        188.72.104.0/24
-                        188.72.105.0/24
-                        188.72.110.0/28
-                        188.72.110.16/28
-                        188.72.110.32/28
-                        188.72.110.48/28
-                        188.72.111.0/28
-                        188.72.111.16/28
-                        188.72.111.32/28
-                        188.72.111.48/28
-                        188.72.113.0/27
-                        188.190.99.16/28
-                        194.186.130.20/31
-                        194.186.177.68/31
-                        195.3.244.16/28
-                        195.16.37.146/31
-                        195.46.167.172/31
-                        195.218.143.90/31
-                        195.239.83.64/31
-                        195.239.101.206/31
-                        195.239.105.200/31
-                        195.239.179.56/31
-                        195.239.193.160/31
-                        212.44.128.188/31
-                        212.46.212.192/31
-                        212.49.97.0/28
-                        212.119.207.200/31
-                        212.192.230.48/28
-                        212.192.232.48/28
-                        212.192.234.16/28
-                        212.192.236.0/28
-                        213.33.132.240/31
-                        213.33.150.46/31
-                        217.13.209.0/28
-                    </div>
-                    <p style="margin-top:0.6rem; font-size:0.8rem; color:var(--text-muted);">
-                        Полный список в <a href="https://tech.cdn.yandex.net/prefixes/yc.json" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px dashed var(--accent);">yc.json</a>
+                    <p style="font-size:0.95rem;">
+                        Автоматически обновляемый список рабочих IP-адресов CDN-сети Yandex Cloud.<br />
+                        Актуальность подтверждена проверкой через HTTPS.
                     </p>
-                </div>
-            </div>
-        </div>
-
-        <h3 class="section-title"><span class="gold">◈</span> Установка и запуск сканера</h3>
-        <div class="card">
-            <div class="os-tabs" id="osTabs">
-                <span class="os-tab active" data-os="ubuntu">Ubuntu / Debian</span>
-                <span class="os-tab" data-os="macos">macOS</span>
-                <span class="os-tab" data-os="windows">Windows</span>
-                <span class="os-tab" data-os="termux">Termux</span>
-            </div>
-            <div id="osContent">
-                <div class="os-content active" data-os="ubuntu">
-                    <p><strong>1. Установите Python и curl:</strong></p>
-                    <div class="code-block">sudo apt update
-sudo apt install python3 python3-pip python3-venv curl git -y</div>
-                    <p><strong>2. Клонируйте и запустите:</strong></p>
-                    <div class="code-block">git clone https://github.com/catgroupmeow/ip-yandexcloudcdn.git
-cd ip-yandexcloudcdn
-python3 -m venv venv
-source venv/bin/activate
-python scanner.py</div>
-                    <p>После сканирования IP сохранятся в <code>ip_yandex.txt</code>. Выйти из venv: <code>deactivate</code></p>
-                </div>
-                <div class="os-content" data-os="macos">
-                    <p><strong>1. Установите Python и curl (через Homebrew):</strong></p>
-                    <div class="code-block">brew install python curl git</div>
-                    <p><strong>2. Клонируйте и запустите:</strong></p>
-                    <div class="code-block">git clone https://github.com/catgroupmeow/ip-yandexcloudcdn.git
-cd ip-yandexcloudcdn
-python3 -m venv venv
-source venv/bin/activate
-python scanner.py</div>
-                    <p>После сканирования IP сохранятся в <code>ip_yandex.txt</code>. Выйти из venv: <code>deactivate</code></p>
-                </div>
-                <div class="os-content" data-os="windows">
-                    <p><strong>1. Скачайте и установите:</strong></p>
-                    <ul style="color:var(--text-secondary); margin-left:1.2rem;">
-                        <li><a href="https://www.python.org/downloads/" target="_blank" style="color:var(--accent);">Python</a> (отметьте <strong>Add Python to PATH</strong>)</li>
-                        <li><a href="https://curl.se/windows/" target="_blank" style="color:var(--accent);">curl</a> (добавьте в PATH)</li>
-                    </ul>
-                    <p><strong>2. Откройте CMD или PowerShell и выполните:</strong></p>
-                    <div class="code-block">git clone https://github.com/catgroupmeow/ip-yandexcloudcdn.git
-cd ip-yandexcloudcdn
-python -m venv venv
-venv\Scripts\activate
-python scanner.py</div>
-                    <p>После сканирования IP сохранятся в <code>ip_yandex.txt</code>. Выйти из venv: <code>deactivate</code></p>
-                </div>
-                <div class="os-content" data-os="termux">
-                    <p><strong>1. Установите Python и curl:</strong></p>
-                    <div class="code-block">pkg update
-pkg install python curl git -y</div>
-                    <p><strong>2. Клонируйте и запустите:</strong></p>
-                    <div class="code-block">git clone https://github.com/catgroupmeow/ip-yandexcloudcdn.git
-cd ip-yandexcloudcdn
-python -m venv venv
-source venv/bin/activate
-python scanner.py</div>
-                    <p>После сканирования IP сохранятся в <code>ip_yandex.txt</code>. Выйти из venv: <code>deactivate</code></p>
+                    <p style="margin-top:1rem; font-size:0.9rem;">
+                        <span style="color:var(--accent);">▸</span> Репозиторий: <a href="https://github.com/catgroupmeow/ip-yandexcloudcdn" target="_blank" style="color:var(--accent);">github.com/catgroupmeow/ip-yandexcloudcdn</a>
+                    </p>
                 </div>
             </div>
         </div>
 
         <h3 class="section-title"><span class="gold">◈</span> Лента обновлений</h3>
         <div class="card news-feed">
-            <div class="news-item"><span class="gold-dot"></span><div><strong>2026-07-05</strong> — Сканирование завершено. Найдено 99 рабочих IP из 88 подсетей.</div></div>
-            <div class="news-item"><span class="gold-dot"></span><div><strong>2026-07-04</strong> — Добавлена поддержка двойной проверки для надёжности.</div></div>
-            <div class="news-item"><span class="gold-dot"></span><div><strong>2026-07-03</strong> — Репозиторий создан. Первый успешный запуск scanner.py.</div></div>
+            <div class="news-item"><span class="gold-dot"></span><div><strong>2026-07-05</strong> — Список обновлён.</div></div>
+            <div class="news-item"><span class="gold-dot"></span><div><strong>2026-07-04</strong> — Добавлена поддержка двойной проверки.</div></div>
+            <div class="news-item"><span class="gold-dot"></span><div><strong>2026-07-03</strong> — Репозиторий создан.</div></div>
         </div>
 
         <h3 class="section-title"><span class="gold">◈</span> Доступные темы</h3>
@@ -576,15 +367,15 @@ python scanner.py</div>
             <span class="theme-badge">✦ Light Crown</span>
         </div>
 
-        <div style="margin-top:3rem; padding:1.2rem 1.8rem; border:1px solid var(--border-color); border-radius:16px; background:var(--bg-card); transition: border-color 0.3s, background 0.3s;">
+        <div style="margin-top:3rem; padding:1.2rem 1.8rem; border:1px solid var(--border-color); border-radius:16px; background:var(--bg-card);">
             <p style="font-size:0.75rem; color:var(--text-muted); text-align:center;">
                 <strong style="color:var(--accent);">⚖️ Отказ от ответственности</strong><br />
-                Данные предоставлены «как есть». Автор не гарантирует актуальность. Использование на ваш риск. Рекомендуется регулярно обновлять список через <code style="background:var(--code-bg); padding:0.1rem 0.4rem; border-radius:4px; font-size:0.7rem;">scanner.py</code>.
+                Данные предоставлены «как есть». Автор не гарантирует актуальность. Использование на ваш риск. Рекомендуется регулярно обновлять список.
             </p>
         </div>
 
         <footer class="footer">
-            <p>catgroupmeow все права защищены</p>
+            <p>© catgroupmeow все права защищены</p>
             <div class="disclaimer">
                 Все IP-адреса получены из открытых источников. Проект не аффилирован с Yandex.
             </div>
@@ -668,28 +459,27 @@ python scanner.py</div>
             animate();
 
             var ips = [
-                '5.187.84.35', '31.135.225.74', '37.128.241.250', '45.143.89.72', '45.157.212.168',
-                '46.245.128.39', '77.41.157.165', '83.234.162.74', '83.234.162.90', '83.234.162.106',
-                '85.26.163.217', '85.26.238.215', '85.249.252.77', '87.248.243.135', '87.248.243.151',
-                '89.38.165.188', '89.113.99.113', '92.119.185.55', '93.157.160.71', '94.41.41.24',
-                '94.41.133.55', '94.247.111.215', '95.167.77.26', '95.167.131.250', '109.200.119.106',
-                '146.158.117.106', '146.185.212.73', '146.185.212.135', '176.59.94.119', '176.59.126.247',
-                '176.59.158.135', '176.59.223.247', '178.19.241.154', '178.34.88.202', '178.176.143.67',
-                '178.176.151.223', '178.176.191.79', '178.185.206.170', '178.185.206.186', '185.154.74.200',
-                '185.205.130.42', '185.205.130.58', '185.205.130.74', '185.205.130.234', '185.205.130.250',
-                '185.211.231.7', '185.221.46.136', '188.43.54.138', '188.43.55.186', '188.43.58.42',
-                '188.72.103.3', '188.72.110.3', '188.72.110.4', '188.72.110.5', '188.72.110.17',
-                '188.72.110.23', '188.72.110.24', '188.72.110.34', '188.72.110.35', '188.72.110.36',
-                '188.72.110.50', '188.72.110.51', '188.72.110.52', '188.72.111.2', '188.72.111.7',
-                '188.72.111.8', '188.72.111.18', '188.72.111.19', '188.72.111.20', '188.72.111.35',
-                '188.72.111.36', '188.72.111.37', '188.72.111.50', '188.72.111.51', '188.72.111.52',
-                '188.72.113.1', '188.72.113.2', '188.190.99.24', '194.186.130.21', '194.186.177.69',
-                '195.3.244.25', '195.16.37.147', '195.46.167.173', '195.218.143.91', '195.239.101.207',
-                '195.239.105.201', '195.239.83.65', '195.239.193.161', '195.239.179.57', '212.44.128.189',
-                '212.46.212.193', '212.49.97.7', '212.119.207.201', '212.192.230.55', '212.192.232.55',
-                '212.192.236.7', '213.33.132.241', '213.33.150.47', '217.13.209.7'
+                '5.187.84.35','31.135.225.74','37.128.241.250','45.143.89.72','45.157.212.168',
+                '46.245.128.39','77.41.157.165','83.234.162.74','83.234.162.90','83.234.162.106',
+                '85.26.163.217','85.26.238.215','85.249.252.77','87.248.243.135','87.248.243.151',
+                '89.38.165.188','89.113.99.113','92.119.185.55','93.157.160.71','94.41.41.24',
+                '94.41.133.55','94.247.111.215','95.167.77.26','95.167.131.250','109.200.119.106',
+                '146.158.117.106','146.185.212.73','146.185.212.135','176.59.94.119','176.59.126.247',
+                '176.59.158.135','176.59.223.247','178.19.241.154','178.34.88.202','178.176.143.67',
+                '178.176.151.223','178.176.191.79','178.185.206.170','178.185.206.186','185.154.74.200',
+                '185.205.130.42','185.205.130.58','185.205.130.74','185.205.130.234','185.205.130.250',
+                '185.211.231.7','185.221.46.136','188.43.54.138','188.43.55.186','188.43.58.42',
+                '188.72.103.3','188.72.110.3','188.72.110.4','188.72.110.5','188.72.110.17',
+                '188.72.110.23','188.72.110.24','188.72.110.34','188.72.110.35','188.72.110.36',
+                '188.72.110.50','188.72.110.51','188.72.110.52','188.72.111.2','188.72.111.7',
+                '188.72.111.8','188.72.111.18','188.72.111.19','188.72.111.20','188.72.111.35',
+                '188.72.111.36','188.72.111.37','188.72.111.50','188.72.111.51','188.72.111.52',
+                '188.72.113.1','188.72.113.2','188.190.99.24','194.186.130.21','194.186.177.69',
+                '195.3.244.25','195.16.37.147','195.46.167.173','195.218.143.91','195.239.101.207',
+                '195.239.105.201','195.239.83.65','195.239.193.161','195.239.179.57','212.44.128.189',
+                '212.46.212.193','212.49.97.7','212.119.207.201','212.192.230.55','212.192.232.55',
+                '212.192.236.7','213.33.132.241','213.33.150.47','217.13.209.7'
             ];
-
             var grid = document.getElementById('ipGrid');
             if (grid) {
                 var html = '';
@@ -699,114 +489,48 @@ python scanner.py</div>
                 grid.innerHTML = html;
             }
 
-            var tabs = document.querySelectorAll('.os-tab');
-            var contents = document.querySelectorAll('.os-content');
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].addEventListener('click', function() {
-                    var os = this.dataset.os;
-                    for (var j = 0; j < tabs.length; j++) {
-                        tabs[j].classList.remove('active');
-                    }
-                    this.classList.add('active');
-                    for (var k = 0; k < contents.length; k++) {
-                        contents[k].classList.remove('active');
-                    }
-                    document.querySelector('.os-content[data-os="' + os + '"]').classList.add('active');
-                });
-            }
-
             var themeButtons = document.querySelectorAll('.theme-btn');
             var root = document.documentElement;
             var themes = {
                 gold: {
-                    '--bg-body': '#0a0a0a',
-                    '--bg-card': 'rgba(20, 18, 14, 0.65)',
-                    '--bg-card-hover': 'rgba(212, 175, 55, 0.06)',
-                    '--text-primary': '#f5e7c8',
-                    '--text-secondary': '#e5d9c5',
-                    '--text-muted': '#b8a58a',
-                    '--accent': '#d4af37',
-                    '--accent-dim': 'rgba(212, 175, 55, 0.18)',
-                    '--border-color': 'rgba(212, 175, 55, 0.25)',
-                    '--shadow-glow': 'rgba(212, 175, 55, 0.15)',
-                    '--code-bg': '#0d0b09',
-                    '--badge-bg': 'rgba(212, 175, 55, 0.12)',
-                    '--badge-border': 'rgba(212, 175, 55, 0.25)',
-                    '--ip-card-bg': 'rgba(10, 10, 10, 0.6)',
-                    '--ip-card-border': 'rgba(212, 175, 55, 0.15)',
-                    '--particle-hue': '38'
+                    '--bg-body':'#0a0a0a','--bg-card':'rgba(20,18,14,0.65)','--bg-card-hover':'rgba(212,175,55,0.06)',
+                    '--text-primary':'#f5e7c8','--text-secondary':'#e5d9c5','--text-muted':'#b8a58a',
+                    '--accent':'#d4af37','--accent-dim':'rgba(212,175,55,0.18)','--border-color':'rgba(212,175,55,0.25)',
+                    '--shadow-glow':'rgba(212,175,55,0.15)','--code-bg':'#0d0b09','--badge-bg':'rgba(212,175,55,0.12)',
+                    '--badge-border':'rgba(212,175,55,0.25)','--ip-card-bg':'rgba(10,10,10,0.6)',
+                    '--ip-card-border':'rgba(212,175,55,0.15)','--particle-hue':'38'
                 },
                 platinum: {
-                    '--bg-body': '#121212',
-                    '--bg-card': 'rgba(30, 30, 35, 0.7)',
-                    '--bg-card-hover': 'rgba(192, 192, 192, 0.06)',
-                    '--text-primary': '#f0f0f0',
-                    '--text-secondary': '#d0d0d0',
-                    '--text-muted': '#a0a0a0',
-                    '--accent': '#c0c0c0',
-                    '--accent-dim': 'rgba(192, 192, 192, 0.2)',
-                    '--border-color': 'rgba(192, 192, 192, 0.25)',
-                    '--shadow-glow': 'rgba(192, 192, 192, 0.1)',
-                    '--code-bg': '#1a1a1a',
-                    '--badge-bg': 'rgba(192, 192, 192, 0.08)',
-                    '--badge-border': 'rgba(192, 192, 192, 0.2)',
-                    '--ip-card-bg': 'rgba(20, 20, 20, 0.6)',
-                    '--ip-card-border': 'rgba(192, 192, 192, 0.12)',
-                    '--particle-hue': '0'
+                    '--bg-body':'#121212','--bg-card':'rgba(30,30,35,0.7)','--bg-card-hover':'rgba(192,192,192,0.06)',
+                    '--text-primary':'#f0f0f0','--text-secondary':'#d0d0d0','--text-muted':'#a0a0a0',
+                    '--accent':'#c0c0c0','--accent-dim':'rgba(192,192,192,0.2)','--border-color':'rgba(192,192,192,0.25)',
+                    '--shadow-glow':'rgba(192,192,192,0.1)','--code-bg':'#1a1a1a','--badge-bg':'rgba(192,192,192,0.08)',
+                    '--badge-border':'rgba(192,192,192,0.2)','--ip-card-bg':'rgba(20,20,20,0.6)',
+                    '--ip-card-border':'rgba(192,192,192,0.12)','--particle-hue':'0'
                 },
                 aurora: {
-                    '--bg-body': '#0b1117',
-                    '--bg-card': 'rgba(20, 35, 50, 0.65)',
-                    '--bg-card-hover': 'rgba(100, 180, 220, 0.06)',
-                    '--text-primary': '#e0f0ff',
-                    '--text-secondary': '#b0d0e8',
-                    '--text-muted': '#7899b0',
-                    '--accent': '#6bb8e8',
-                    '--accent-dim': 'rgba(107, 184, 232, 0.2)',
-                    '--border-color': 'rgba(107, 184, 232, 0.25)',
-                    '--shadow-glow': 'rgba(107, 184, 232, 0.15)',
-                    '--code-bg': '#0a151f',
-                    '--badge-bg': 'rgba(107, 184, 232, 0.08)',
-                    '--badge-border': 'rgba(107, 184, 232, 0.2)',
-                    '--ip-card-bg': 'rgba(8, 18, 28, 0.6)',
-                    '--ip-card-border': 'rgba(107, 184, 232, 0.12)',
-                    '--particle-hue': '200'
+                    '--bg-body':'#0b1117','--bg-card':'rgba(20,35,50,0.65)','--bg-card-hover':'rgba(100,180,220,0.06)',
+                    '--text-primary':'#e0f0ff','--text-secondary':'#b0d0e8','--text-muted':'#7899b0',
+                    '--accent':'#6bb8e8','--accent-dim':'rgba(107,184,232,0.2)','--border-color':'rgba(107,184,232,0.25)',
+                    '--shadow-glow':'rgba(107,184,232,0.15)','--code-bg':'#0a151f','--badge-bg':'rgba(107,184,232,0.08)',
+                    '--badge-border':'rgba(107,184,232,0.2)','--ip-card-bg':'rgba(8,18,28,0.6)',
+                    '--ip-card-border':'rgba(107,184,232,0.12)','--particle-hue':'200'
                 },
                 dark: {
-                    '--bg-body': '#0a0808',
-                    '--bg-card': 'rgba(30, 20, 20, 0.7)',
-                    '--bg-card-hover': 'rgba(180, 120, 80, 0.06)',
-                    '--text-primary': '#e8d5c0',
-                    '--text-secondary': '#c0a890',
-                    '--text-muted': '#806a5a',
-                    '--accent': '#b08050',
-                    '--accent-dim': 'rgba(176, 128, 80, 0.2)',
-                    '--border-color': 'rgba(176, 128, 80, 0.25)',
-                    '--shadow-glow': 'rgba(176, 128, 80, 0.1)',
-                    '--code-bg': '#150e0a',
-                    '--badge-bg': 'rgba(176, 128, 80, 0.08)',
-                    '--badge-border': 'rgba(176, 128, 80, 0.2)',
-                    '--ip-card-bg': 'rgba(16, 10, 8, 0.6)',
-                    '--ip-card-border': 'rgba(176, 128, 80, 0.12)',
-                    '--particle-hue': '30'
+                    '--bg-body':'#0a0808','--bg-card':'rgba(30,20,20,0.7)','--bg-card-hover':'rgba(180,120,80,0.06)',
+                    '--text-primary':'#e8d5c0','--text-secondary':'#c0a890','--text-muted':'#806a5a',
+                    '--accent':'#b08050','--accent-dim':'rgba(176,128,80,0.2)','--border-color':'rgba(176,128,80,0.25)',
+                    '--shadow-glow':'rgba(176,128,80,0.1)','--code-bg':'#150e0a','--badge-bg':'rgba(176,128,80,0.08)',
+                    '--badge-border':'rgba(176,128,80,0.2)','--ip-card-bg':'rgba(16,10,8,0.6)',
+                    '--ip-card-border':'rgba(176,128,80,0.12)','--particle-hue':'30'
                 },
                 light: {
-                    '--bg-body': '#f5efe8',
-                    '--bg-card': 'rgba(255, 250, 240, 0.7)',
-                    '--bg-card-hover': 'rgba(200, 180, 160, 0.06)',
-                    '--text-primary': '#3d352a',
-                    '--text-secondary': '#4a4035',
-                    '--text-muted': '#7a6a5a',
-                    '--accent': '#b09070',
-                    '--accent-dim': 'rgba(176, 144, 112, 0.2)',
-                    '--border-color': 'rgba(176, 144, 112, 0.25)',
-                    '--shadow-glow': 'rgba(176, 144, 112, 0.1)',
-                    '--code-bg': '#e5ddd0',
-                    '--badge-bg': 'rgba(176, 144, 112, 0.08)',
-                    '--badge-border': 'rgba(176, 144, 112, 0.2)',
-                    '--ip-card-bg': 'rgba(255, 248, 240, 0.6)',
-                    '--ip-card-border': 'rgba(176, 144, 112, 0.12)',
-                    '--particle-hue': '35'
+                    '--bg-body':'#f5efe8','--bg-card':'rgba(255,250,240,0.7)','--bg-card-hover':'rgba(200,180,160,0.06)',
+                    '--text-primary':'#3d352a','--text-secondary':'#4a4035','--text-muted':'#7a6a5a',
+                    '--accent':'#b09070','--accent-dim':'rgba(176,144,112,0.2)','--border-color':'rgba(176,144,112,0.25)',
+                    '--shadow-glow':'rgba(176,144,112,0.1)','--code-bg':'#e5ddd0','--badge-bg':'rgba(176,144,112,0.08)',
+                    '--badge-border':'rgba(176,144,112,0.2)','--ip-card-bg':'rgba(255,248,240,0.6)',
+                    '--ip-card-border':'rgba(176,144,112,0.12)','--particle-hue':'35'
                 }
             };
 
