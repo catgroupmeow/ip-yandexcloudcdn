@@ -126,19 +126,10 @@
 ---
 
 ## 🚀 Быстрый старт
-
-### Прямое использование
-```bash
-# Тестовый запрос
-curl --resolve api-1.catgroupmeow.xyz:443:188.72.111.19 https://api-1.catgroupmeow.xyz/api/v1/assets/
-
-# Добавить в брандмауэр
-# Разрешить: 188.72.111.0/24 (пример подсети)
 ```
 
 ### Автоматическое сканирование
 ```bash
-# Клонировать и запустить
 git clone https://github.com/catgroupmeow/ip-yandexcloudcdn.git
 cd ip-yandexcloudcdn
 python scanner.py
