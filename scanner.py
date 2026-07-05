@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-"""
-Проверка IP-адресов Yandex Cloud CDN для api-1.catgroupmeow.xyz
-Путь: /api/v1/assets/
-Успех = HTTP 400.
-Источник IP: https://tech.cdn.yandex.net/prefixes/yc.json
-"""
-
 import ipaddress
 import json
 import socket
