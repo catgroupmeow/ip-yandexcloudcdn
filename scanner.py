@@ -36,12 +36,9 @@ def check_ip(ip):
         sock.settimeout(TIMEOUT)
         sock.connect((ip, 443))
 
-        # Создаём контекст с поддержкой renegotiation
         context = ssl.create_default_context()
-        # Отключаем проверку сертификата (если нужно, можно включить)
         context.check_hostname = False
         context.verify_mode = ssl.CERT_NONE
-        # Включаем renegotiation (доступно в Python 3.10+)
         if hasattr(ssl, 'OP_ENABLE_RENEGOTIATION'):
             context.options |= ssl.OP_ENABLE_RENEGOTIATION
 
@@ -55,7 +52,6 @@ def check_ip(ip):
         )
         tls_sock.send(request.encode())
 
-        # Читаем ответ, пока не получим пустую строку (заголовки)
         response = b""
         while True:
             chunk = tls_sock.recv(4096)
